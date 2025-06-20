@@ -1,6 +1,13 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+
+## [0.6.0]() (2024-06-20)
+
+### Changes
+
+- Update Datadog Monitor Module Source to Terraform Registry.
+
 ## [0.5.1]() (2024-04-24)
 
 ### Breaking changes
