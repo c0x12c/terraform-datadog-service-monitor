@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.7.0]() (2025-07-10)
+
+### Breaking changes
+
+* Modify the Datadog restart monitor to use the change() function, following the Datadog example.
+
 ## [0.6.0]() (2024-06-20)
 
 ### Changes
