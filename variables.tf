@@ -40,6 +40,7 @@ variable "override_default_monitors" {
     - renotify_interval: The renotify interval for the monitor.
 
     The following attributes are optional:
+    - override_default_message: An optional message to override the default slack mention.
     - renotify_occurrences: The renotify occurrences for the monitor.
     - require_full_window: Whether the monitor requires a full window.
     - enabled_include_tags: Whether to include tags in the monitor.
@@ -51,6 +52,7 @@ variable "override_default_monitors" {
     priority_level              = optional(number)
     title_tags                  = optional(string)
     title                       = optional(string)
+    override_default_message    = optional(string)
     type                        = optional(string)
     query_template              = optional(string)
     query_args                  = optional(map(string))
