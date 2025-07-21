@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.7.1]() (2025-07-21)
+
+### Features
+
+* Update to use c0x12c/monitors/datadog version 1.0.0
+* Add override_default_message to change default alert messages
+
 ## [0.7.0]() (2025-07-10)
 
 ### Breaking changes

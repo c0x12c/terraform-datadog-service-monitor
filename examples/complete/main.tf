@@ -17,8 +17,7 @@ module "service_monitor" {
       priority_level = 3
       title_tags     = "[High Error Hits]"
       title          = "Service service-platform Error Hits is high"
-
-      query_template = "sum($${timeframe}):sum:$${metric}{env:dev,service:service-platform.as_count() > $${threshold_critical}"
+      query_template = "sum($${timeframe}):sum:$${metric}{env:dev,service:service-platform}.as_count() > $${threshold_critical}"
       query_args = {
         timeframe = "last_5m"
         metric    = "trace.fastapi.request.errors"
