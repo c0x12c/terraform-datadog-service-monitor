@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0]() (2025-07-21)
+
+### Feature
+
+* Pump version to 1.0.0
+* Customize the query field from p95 metrics, request hit and error hit
+
 ## [0.7.1]() (2025-07-21)
 
 ### Features
