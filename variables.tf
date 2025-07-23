@@ -98,3 +98,23 @@ variable "overwrite_container_name" {
   type        = string
   default     = null
 }
+
+variable "p95_metric" {
+  description = "The metric name used for P95 request latency calculations."
+  type        = string
+  default     = "trace.http.request"
+}
+
+# Variable for the total request count metric.
+variable "request_hit_metric" {
+  description = "The metric name used for counting total requests (hits)."
+  type        = string
+  default     = "trace.http.request.hits"
+}
+
+# Variable for the request error count metric.
+variable "error_hit_metric" {
+  description = "The metric name used for counting request errors."
+  type        = string
+  default     = "trace.http.request.errors"
+}

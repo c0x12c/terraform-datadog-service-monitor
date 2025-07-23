@@ -111,7 +111,7 @@ locals {
     renotify_interval           = 60
   }
 
-  p95_metric         = "trace.fastapi.request"
-  request_hit_metric = "trace.fastapi.request.hits"
-  error_hit_metric   = "trace.fastapi.request.errors"
+  p95_metric         = var.p95_metric
+  request_hit_metric = var.request_hit_metric
+  error_hit_metric   = var.error_hit_metric
 }
