@@ -16,7 +16,7 @@ locals {
     }
 
     threshold_critical          = 1
-    threshold_critical_recovery = 0
+    threshold_critical_recovery = 0.5
     renotify_interval           = 60
   }
 

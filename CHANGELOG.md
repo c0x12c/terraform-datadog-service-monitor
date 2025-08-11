@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1]() (2025-08-11)
+
+### Feature
+
+* Change pods restart recovery threshold from `< 0` to `< 0.5`
+
 ## [1.0.0]() (2025-07-21)
 
 ### Feature
