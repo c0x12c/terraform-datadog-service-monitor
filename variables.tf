@@ -118,3 +118,9 @@ variable "error_hit_metric" {
   type        = string
   default     = "trace.http.request.errors"
 }
+
+variable "restart_on_missing_data" {
+  description = "The value to use for on_missing_data when creating the restart monitor."
+  type        = string
+  default     = "resolve"
+}
