@@ -72,7 +72,7 @@ No resources.
 | <a name="input_p95_metric"></a> [p95\_metric](#input\_p95\_metric) | The metric name used for P95 request latency calculations. | `string` | `"trace.http.request"` | no |
 | <a name="input_pod_monitor_enabled"></a> [pod\_monitor\_enabled](#input\_pod\_monitor\_enabled) | Whether pod monitors (e.g., pod restarts.) should be created. Set to 'true' to create the monitors, 'false' to disable. | `bool` | `false` | no |
 | <a name="input_request_hit_metric"></a> [request\_hit\_metric](#input\_request\_hit\_metric) | The metric name used for counting total requests (hits). | `string` | `"trace.http.request.hits"` | no |
-| <a name="input_restart_on_missing_data"></a> [restart\_on\_missing\_data](#input\_restart\_on\_missing\_data) | The value to use for on\_missing\_data when creating the restart monitor. | `string` | `"default"` | no |
+| <a name="input_restart_on_missing_data"></a> [restart\_on\_missing\_data](#input\_restart\_on\_missing\_data) | The value to use for on\_missing\_data when creating the restart monitor. | `string` | `"resolve"` | no |
 | <a name="input_service_monitor_enabled"></a> [service\_monitor\_enabled](#input\_service\_monitor\_enabled) | Whether service monitors (e.g., p95 latency, request and error hit.) should be created. Set to 'true' to create the monitors, 'false' to disable. | `bool` | `false` | no |
 | <a name="input_service_name"></a> [service\_name](#input\_service\_name) | Specify the service name for monitoring. Navigate to Datadog dashboard to have accurate determination. | `string` | n/a | yes |
 | <a name="input_tag_slack_channel"></a> [tag\_slack\_channel](#input\_tag\_slack\_channel) | Whether to tag the Slack channel in the message | `bool` | `true` | no |

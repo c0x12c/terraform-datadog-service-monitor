@@ -122,5 +122,5 @@ variable "error_hit_metric" {
 variable "restart_on_missing_data" {
   description = "The value to use for on_missing_data when creating the restart monitor."
   type        = string
-  default     = "default"
+  default     = "resolve"
 }
