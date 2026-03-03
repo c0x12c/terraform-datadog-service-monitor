@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0]() (2025-08-11)
+
+### Feature
+
+* Add the variable `var.restart_on_missing_data` to manage the state when there is no change. When the restart value increases to 1 and then returns to 0, the alert does not recover because the recovery threshold requires a value below 0, while the alert threshold is >= 1. Therefore, when the value is 0, the monitor does not recover. The on missing data will fix it whenever the data is at 0.
+
 ## [1.0.1]() (2025-08-11)
 
 ### Feature

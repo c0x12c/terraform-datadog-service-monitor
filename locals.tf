@@ -15,6 +15,8 @@ locals {
       kube_container_name = var.overwrite_container_name != null ? var.overwrite_container_name : var.service_name
     }
 
+    on_missing_data = var.restart_on_missing_data
+
     threshold_critical          = 1
     threshold_critical_recovery = 0.5
     renotify_interval           = 60
