@@ -9,7 +9,7 @@ module "pod" {
 
   monitors = {
     for monitor, config in local.default_pod_monitors :
-    monitor => merge(config, try(var.override_default_monitors[monitor], {})) if var.pod_monitor_enabled
+    monitor => merge(config, try(local.override_default_monitors_clean[monitor], {})) if var.pod_monitor_enabled
   }
 }
 
@@ -24,7 +24,7 @@ module "cpu" {
 
   monitors = {
     for monitor, config in local.default_cpu_monitors :
-    monitor => merge(config, try(var.override_default_monitors[monitor], {})) if var.cpu_monitor_enabled
+    monitor => merge(config, try(local.override_default_monitors_clean[monitor], {})) if var.cpu_monitor_enabled
   }
 }
 
@@ -39,6 +39,6 @@ module "memory" {
 
   monitors = {
     for monitor, config in local.default_memory_monitors :
-    monitor => merge(config, try(var.override_default_monitors[monitor], {})) if var.memory_monitor_enabled
+    monitor => merge(config, try(local.override_default_monitors_clean[monitor], {})) if var.memory_monitor_enabled
   }
 }
