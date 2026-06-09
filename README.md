@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> This repository is a **read-only mirror** generated from
+> [`c0x12c/terraform-modules`](https://github.com/c0x12c/terraform-modules/tree/master/terraform-datadog-service-monitor).
+> Develop and open PRs there — changes pushed here are overwritten on the next release.
+
 # Datadog Service Monitor module
 
 Terraform module which creates Datadog monitors for services, supporting:
@@ -36,12 +41,11 @@ module "service_monitor" {
 
 Override only the fields you want to change; everything else (title,
 `query_template`, etc.) keeps the module defaults. Partial overrides are
-supported since `1.1.1`:
+supported:
 
 ```hcl
 module "service_monitor" {
-  source  = "c0x12c/service-monitor/datadog"
-  version = "1.1.1"
+  source = "c0x12c/service-monitor/datadog"
 
   cluster_name                      = "proj-service-dev"
   service_name                      = "service-platform"

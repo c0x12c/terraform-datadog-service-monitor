@@ -28,8 +28,8 @@ module "service_monitor" {
       renotify_interval           = 60
     }
 
-    # Partial override (supported since 1.1.1): set only the fields you want to
-    # change; title, query_template, and the rest keep their module defaults.
+    # Partial override: set only the fields you want to change; title,
+    # query_template, and the rest keep their module defaults.
     p95 = {
       threshold_critical          = 2
       threshold_critical_recovery = 1.8
